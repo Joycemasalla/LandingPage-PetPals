@@ -1,0 +1,364 @@
+/* Define que as propriedades de margem, preenchimento e caixa de modelo se aplicam a todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ /*Estabele o cursor padrão em toda a página enquanto não dizer ao contrario*/
+    cursor: default; 
+}
+
+/*   cabeçalho */
+header {
+    background-color: #2d5a92; /* Cor de fundo */
+    display: flex;
+    flex-direction: row;
+    position: sticky; /* Fixa o cabeçalho na parte superior da janela de visualização */
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+    height: 100px;
+    justify-content: flex-end; /* Alinha os itens do cabeçalho à direita */
+}
+
+/*   seção inicial */
+div.inicio {
+    display: flex;
+    background-color: #91cbe0; /* Cor de fundo */
+    height: 575px;
+}
+
+/*   logotipo */
+#logo {
+    left: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    width: 91px;
+    height: 91px;
+}
+
+/*   título do cabeçalho */
+.cabeçalho h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinha o texto à esquerda */
+    margin-right: 430px; /* Margem à direita */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 40px;
+}
+
+/*   links do cabeçalho */
+header a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    text-decoration: none;
+}
+
+/* Define o comportamento dos links do cabeçalho ao passar o mouse sobre eles */
+header a:hover {
+    color: #91cbe0;
+}
+
+/*   corpo da página */
+body {
+    height: 200vh; /* Altura igual a duas vezes a altura da janela de visualização */
+}
+
+/*   seção de animais */
+#animais {
+    height: 600px;
+    width: 680px;
+    justify-content: flex-end; /*alinha os itens ao final*/
+    margin-top: 0px;
+}
+
+/*   título da seção inicial */
+.inicio h1 {
+    display: flex;
+    font-style: oblique;
+    font-size: 60px;
+    color: aliceblue;
+    margin-left: 200px;
+    width: 900px;
+    align-items: center;
+    height: auto;
+}
+
+/*   introdução */
+#intro {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(26, 78, 141);
+    width: 900px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center; /*centraliza o texto horizontalmente dentro do elemento*/
+    padding: 30px 20px 20px 20px;
+    font-family: 'work sans', sans-serif;
+}
+
+/*   título dos serviços */
+#servicotitulo {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(26, 78, 141);
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center; /*centraliza o texto horizontalmente dentro do elemento*/
+    padding: 80px 60px 20px 20px;
+    font-family: 'work sans', sans-serif;    
+    background-color: #91cbe0; /* Cor de fundo */
+}
+
+/*   seção de família */
+#familia {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px 0px #092c42; /*sombra*/
+    align-items: center;
+}
+
+/*   seção de serviços */
+.servicos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /*quebra os itens flexíveis em várias linhas conforme necessário*/
+    background-color: #91cbe0;
+    background: linear-gradient(to bottom, #91cbe0, #2d5a92); /*cria um fundo com gradiente linear que vai de cima para baixo*/
+}
+
+/*   cartão de serviço */
+.servicos .card {
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    width: 250px;
+    height: 310px;
+    background-color: aliceblue;
+    margin: 12px 50px;
+    border-radius: 10px; /*Arredonda os cantos do elemento com um raio de 10 pixels.*/
+    overflow: hidden; /*Esconde qualquer conteúdo que exceda as dimensões do elemento.*/
+    transition: 0.5s;/*Aplica uma transição suave com duração de 0.5 segundos a todas as propriedades que forem alteradas.*/
+    text-align: center;
+    justify-content: space-between;
+}
+
+/*   conteúdo dentro do cartão de serviço */
+.servicos.car.conteudo {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Define o comportamento do cartão de serviço ao passar o mouse sobre ele */
+.card:hover {
+    background-color: #91cbe0;
+    margin-top: -20px;
+    cursor: default;/*define o cursor do mouse como o padrão do sistema.*/
+    box-shadow: 0px 2px 10px 0px rgba(1, 9, 59, 0.5);
+}
+
+/*   título dentro do cartão de serviço */
+.servicos .card h1 {
+    font-family: worksans-semibold, 'work sans', sans-serif;
+    color: #1A4E8D;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/*   texto dentro do cartão de serviço */
+.servicos .card p {
+    text-align: center;
+    padding: 5px;
+    font-family: poppins, sans-serif;
+    color: #6488b4;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*   chamada de ação */
+.chamada {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A4E8D;
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    background: linear-gradient(to bottom, #2d5a92, #1A4E8D);
+}
+
+/*   botão da chamada de ação */
+#botaochamada {
+    display: flex;
+    height: 40px;
+    text-align: center;
+    flex-direction: column; /*direciona os itens para serem dispostos em uma única coluna.*/
+    border-radius: 20px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    align-self: center; /*controla o alinhamento vertical de UM item especifico dentro de seu contêiner .*/
+    margin-top: 30px;
+}
+
+/*   botão */
+#botao {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    color: #ffffff;
+    width: 250px;
+    height: 35px;
+    text-decoration: none; /*remove a decoração de texto, como sublinhado, de um elemento.*/
+    padding-top: 5px;
+}
+
+/* Define o comportamento do botão ao passar o mouse sobre ele */
+#botao:hover {
+    color: #1a4e8d;
+    background-color: #ffffff;
+}
+
+/* título da chamada de ação */
+.chamada h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    align-self: center;
+    font-family: worksans-semibold, 'work sans', sans-serif;
+    width: 900px;
+    margin-top: 30px;
+}
+
+/* imagem de um cachorro feliz */
+#cachorrofeliz {
+    height: 90px;
+    width: 100px;
+}
+
+/* imagens dos animais */
+.imagemAnimais {
+    width: 100%;
+    background-color: #1A4E8D;
+    height: auto;
+}
+
+/* barra de rolagem horizontal das imagens */
+.imagemAnimais .imagens::-webkit-scrollbar {
+    margin-top: 3px;
+    width: 20px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem */
+}
+
+/*   polegar da barra de rolagem */
+.imagemAnimais .imagens::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent 10%, #0a022f 10%, #092c42 70%, transparent 70%); /* Gradiente para simular a borda triangular */
+    border-radius: 40px; /* Raio de borda para suavizar a aparência */
+}
+
+/*   trilha da barra de rolagem */
+.imagemAnimais .imagens::-webkit-scrollbar-track {
+    background-color: #1A4E8D; /* Cor de fundo da barra de rolagem */
+}
+
+/*   contêiner das imagens */
+.imagemAnimais .imagens {
+    display: flex;
+    white-space: nowrap;/* Impede a quebra de linha dentro do elemento, forçando todo o conteúdo a permanecer em uma única linha.*/
+    overflow-x: scroll; /*Adiciona uma barra de rolagem horizontal ao elemento se o conteúdo ultrapassar os limites do contêiner.*/
+    
+}
+
+/*   imagens dentro do contêiner */
+.imagemAnimais .imagens img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 9px;
+}
+
+/*   anúncio */
+.anuncio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: #092c42 10px;
+    margin: auto;
+    font-size: 16px;
+    color: #000000;
+    font-style: oblique;
+    align-items: center;
+    font-family: poppins-extralight, poppins, sans-serif;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+/*   título do anúncio */
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(26, 78, 141);
+    font-size: 30px;
+}
+
+/*   seção de contato */
+.contato {
+    background: linear-gradient(to bottom, #1A4E8D, #91cbe0);
+    border-top: #113e76 solid 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*   título da seção de contato */
+.contato h2 {
+    color: #ffffff;
+}
+
+/*   botão na seção de contato */
+.contato button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*   comportamento do botão ao passar o mouse sobre ele */
+.contato button:hover {
+    background-color: #555;
+}
+
+/*   rodapé */
+footer {
+    background-color: #2d5a92;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

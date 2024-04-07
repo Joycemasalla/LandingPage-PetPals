@@ -1,0 +1,127 @@
+/* Define um estilo de reset para garantir que não haja margens ou preenchimentos padrão em nenhum elemento HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ /*Estabele o cursor padrão em toda a página enquanto não dizer ao contrario*/
+    cursor: default; 
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #2d5a92; /* Cor de fundo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Para garantir que o cabeçalho esteja sempre acima do conteúdo */
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilos para os links no cabeçalho */
+header a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    text-decoration: none;
+}
+
+/* Estilos quando o mouse passa por cima dos links no cabeçalho */
+header a:hover {
+    color: #91cbe0; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o logo no cabeçalho */
+#logo {
+    width: 91px;
+    height: 91px;
+}
+
+/* Estilos para o título no cabeçalho */
+.cabeçalho h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinha o texto à esquerda */
+    margin-right: 430px; /* Margem à direita */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 40px;
+    font-family: Ubuntu;
+}
+
+/* Estilos para a área de contato */
+.contato {
+    background-color: #91cbe0; /* Cor de fundo */
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para o título dentro da área de contato */
+.contato h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1A4E8D;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'work sans', sans-serif;/*sem serifa*/
+}
+
+/* Estilos para os parágrafos dentro da área de contato */
+.contato p {
+    font-size: 18px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para as etiquetas dos campos do formulário */
+.contato form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os campos de texto, e-mail e área de texto do formulário */
+.contato form input[type="text"],
+.contato form input[type="email"],
+.contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o botão de envio do formulário */
+.contato form input[type="submit"] {
+    background-color: #1A4E8D; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Removendo a borda */
+    padding: 12px 20px; /* Preenchimento */
+    font-size: 18px; /* Tamanho da fonte */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+/* Estilos para o botão de envio do formulário quando o mouse passa por cima */
+.contato form input[type="submit"]:hover {
+    color: #1a4e8d;
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #2d5a92; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento de texto */
+    padding: 20px; /* Preenchimento */
+}
